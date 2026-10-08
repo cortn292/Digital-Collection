@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>What is "Structure"?</title>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+ 
+<section id="home" class="on">
+  <div class="rule"></div>
+  <h1>The Human Draw<br>to Structure</h1>
+  <p>Fifty horizontal lines. Arrange them until something holds.</p>
+  <div class="enter">Enter &rarr;</div>
+</section>
+ 
+<section id="game">
+  <div class="nav"><a data-go="home">structure</a><div><a data-go="game">play</a><a data-go="archive">archive</a></div></div>
+  <div class="wrap">
+    <div>
+      <div class="board" id="board"></div>
+      <div class="bar">
+        <span class="mute" id="count"></span>
+        <select id="size"><option value="2x3">2 &times; 3</option><option value="3x3" selected>3 &times; 3</option><option value="3x4">3 &times; 4</option><option value="4x4">4 &times; 4</option></select>
+        <button id="clear">clear</button>
+        <button id="save">Save your creation</button>
+      </div>
+    </div>
+    <div>
+      <div class="tray" id="tray"></div>
+      <div class="bar"><span class="mute">drag, or tap a tile then a square. tap a placed tile to remove the image.</span></div>
+          </div>
+  </div>
+</section>
+ 
+<section id="archive">
+  <div class="nav"><a data-go="home">structure</a><div><a data-go="game">play</a><a data-go="archive">archive</a></div></div>
+  <div class="arch" id="arch"></div>
+  <p class="mute" id="empty" style="display:none">nothing saved yet.</p>
+</section>
+ 
+<div id="toast"></div>
+ 
+<script src="script.js"></script>
+</body>
+</html>
