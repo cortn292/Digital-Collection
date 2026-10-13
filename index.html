@@ -1,47 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
+<html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>What is "Structure"?</title>
+<title>Structure</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="main.css">
-</head>
-<body>
- 
-<section id="home" class="on">
-  <div class="rule"></div>
-  <h1>The Human Draw<br>to Structure</h1>
-  <p>Fifty horizontal lines. Arrange them until something holds.</p>
-  <div class="enter">Enter &rarr;</div>
-</section>
- 
-<section id="game">
-  <div class="nav"><a data-go="home">structure</a><div><a data-go="game">play</a><a data-go="archive">archive</a></div></div>
-  <div class="wrap">
-    <div>
-      <div class="board" id="board"></div>
-      <div class="bar">
-        <span class="mute" id="count"></span>
-        <select id="size"><option value="2x3">2 &times; 3</option><option value="3x3" selected>3 &times; 3</option><option value="3x4">3 &times; 4</option><option value="4x4">4 &times; 4</option></select>
-        <button id="clear">clear</button>
-        <button id="save">Save your creation</button>
-      </div>
-    </div>
-    <div>
-      <div class="tray" id="tray"></div>
-      <div class="bar"><span class="mute">drag, or tap a tile then a square. tap a placed tile to remove the image.</span></div>
-          </div>
-  </div>
-</section>
- 
-<section id="archive">
-  <div class="nav"><a data-go="home">structure</a><div><a data-go="game">play</a><a data-go="archive">archive</a></div></div>
-  <div class="arch" id="arch"></div>
-  <p class="mute" id="empty" style="display:none">nothing saved yet.</p>
-</section>
- 
-<div id="toast"></div>
- 
+</head><body>
+
+<section id="home" class="view on"><h1>STRUCTURE</h1><div class="rules"><i></i><i></i><i></i><i></i></div>
+<p>We are drawn to structure. Wherever there is a line, we look for another to lay beside it. Arrange them. See what holds.</p><small>CLICK ANYWHERE TO BEGIN</small></section>
+
+<section id="game" class="view">
+<nav><span class="t" data-go="home">STRUCTURE</span><input type="text" id="title" placeholder="title (optional)"><button id="save">Save</button><button id="read">Read</button><button id="clear">Clear</button><button data-go="archive">Archive</button></nav>
+<div id="slots"></div>
+<nav style="margin:10px 0 0"><button id="minus">− slot</button><button id="plus">+ slot</button></nav>
+<p class="hint">Drag a tile up into the row and it locks. Tap a placed tile to release it. Tiles marked "text" carry words.</p>
+<div id="tray"></div></section>
+
+<section id="archive" class="view"><nav><span class="t" data-go="home">STRUCTURE</span><button data-go="game">Back to the game</button></nav><div id="list"></div></section>
+
+<div id="modal"><div id="mbox"></div></div>
+
 <script src="script.js"></script>
-</body>
-</html>
+</body></html>
