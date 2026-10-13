@@ -1,10 +1,3 @@
-/* ============================================================
-   YOUR IMAGES AND POEMS
-   One line per tile, in tray order. "src" is the file in /images.
-   "poem" (optional) = title / author / link, shown in the Read view.
-   "text" (optional) = full poem text to display. Only paste text
-   you have the right to publish (public domain or your own).
-   ============================================================ */
 const MY_TILES=[
   {"id": "01", "src": "images/01.jpg", "text": ""},
   {"id": "02", "src": "images/02.jpg", "text": ""},
